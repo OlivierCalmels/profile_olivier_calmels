@@ -10086,6 +10086,15 @@ p.lead {
   font-size: 3rem;
 }
 
+.dev-icons .social-icon {
+  color: #495057
+}
+
+.dev-icons .social-icon:hover {
+  color: #bd5d38
+}
+
+
 section.resume-section {
   display: flex;
   align-items: center;
