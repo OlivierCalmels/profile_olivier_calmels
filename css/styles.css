@@ -10045,6 +10045,7 @@ p.lead {
     max-height: 10rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
+
   #sideNav .navbar-collapse {
     display: flex;
     align-items: flex-start;
@@ -10062,6 +10063,12 @@ p.lead {
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
+}
+
+#about .resume-section-content .img-profile {
+  max-width: 10rem;
+  max-height: 10rem;
+  border: 0.5rem solid rgb(173, 12, 66);
 }
 .social-icons .social-icon {
   display: inline-flex;
