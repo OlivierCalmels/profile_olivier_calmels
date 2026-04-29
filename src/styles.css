@@ -8,11 +8,18 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   --color-body-text: var(--gray);
+  /* Réseaux (style CV historique Bootstrap) */
+  --color-social-bg: #495057;
+  --color-social-bg-hover: #343a40;
 }
 
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+}
+
+.social-link-circle {
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {

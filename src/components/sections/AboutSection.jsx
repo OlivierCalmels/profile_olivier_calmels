@@ -28,22 +28,24 @@ export default function AboutSection({ t, cvVariant }) {
         </a>{" "}
         {t.about.intro2b}
       </BodyText>
-      <div className="mt-8 flex gap-8">
+      <div className="mt-8 flex flex-wrap gap-8">
         <a
-          className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-700 text-4xl text-white transition hover:bg-slate-800"
+          className="social-link-circle inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[var(--color-social-bg)] text-2xl leading-none text-white no-underline transition-colors hover:bg-[var(--color-social-bg-hover)]"
           href="https://www.linkedin.com/in/olivier-calmels/?locale=fr_FR"
           target="_blank"
           rel="noreferrer"
+          aria-label="LinkedIn — profil Olivier Calmels"
         >
-          <i className="fab fa-linkedin-in" />
+          <i className="fab fa-linkedin-in" aria-hidden />
         </a>
         <a
-          className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-700 text-4xl text-white transition hover:bg-slate-800"
+          className="social-link-circle inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[var(--color-social-bg)] text-2xl leading-none text-white no-underline transition-colors hover:bg-[var(--color-social-bg-hover)]"
           href="https://github.com/OlivierCalmels"
           target="_blank"
           rel="noreferrer"
+          aria-label="GitHub — OlivierCalmels"
         >
-          <i className="fab fa-github" />
+          <i className="fab fa-github" aria-hidden />
         </a>
       </div>
       <div className="mt-8">
