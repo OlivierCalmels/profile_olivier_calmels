@@ -1,4 +1,10 @@
 # Chaque push sur `main` build le site (Vite) et publie sur GitHub Pages (source : GitHub Actions).
+#
+# Prérequis une fois sur le dépôt GitHub :
+#   Settings → Pages → Build and deployment → Source : « GitHub Actions »
+#   Settings → Environments → github-pages → autoriser les déploiements depuis la branche « main »
+# (Sans ça, configure-pages / l’API Pages renvoie « Not Found » ou le déploiement est refusé.)
+#
 name: Deploy to GitHub Pages
 
 run-name: "Pages — ${{ github.ref_name }} @ ${{ github.sha }}"
@@ -30,9 +36,6 @@ jobs:
         with:
           node-version: 20
           cache: npm
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
 
       - name: Install dependencies
         run: npm ci
