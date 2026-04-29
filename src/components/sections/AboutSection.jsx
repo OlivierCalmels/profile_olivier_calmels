@@ -8,7 +8,7 @@ export default function AboutSection({ t, cvVariant }) {
       <div className="flex min-h-screen flex-col justify-center">
       <img
         className="mb-6 block h-44 w-44 rounded-full border-8 border-[var(--color-primary)] object-cover lg:hidden"
-        src="assets/img/portrait.jpg"
+        src={`${import.meta.env.BASE_URL}assets/img/portrait.jpg`}
         alt="Profile picture of Olivier Calmels"
       />
       <PageTitle>

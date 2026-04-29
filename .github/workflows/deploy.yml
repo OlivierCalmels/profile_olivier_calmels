@@ -1,9 +1,10 @@
 # Chaque push sur `main` build le site (Vite) et publie sur GitHub Pages (source : GitHub Actions).
 #
 # Prérequis une fois sur le dépôt GitHub :
-#   Settings → Pages → Build and deployment → Source : « GitHub Actions »
+#   Settings → Pages → Build and deployment → Source : UNIQUEMENT « GitHub Actions »
+#   (Si « Deploy from a branch » reste actif, GitHub sert l’index.html à la racine du repo avec
+#   <script src="/src/main.jsx"> → 404 → page blanche. Le workflow publie le contenu de ./dist.)
 #   Settings → Environments → github-pages → autoriser les déploiements depuis la branche « main »
-# (Sans ça, configure-pages / l’API Pages renvoie « Not Found » ou le déploiement est refusé.)
 #
 name: Deploy to GitHub Pages
 

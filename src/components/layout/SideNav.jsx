@@ -44,7 +44,7 @@ export default function SideNav({
 
         <img
           className="hidden h-40 w-40 rounded-full border-8 border-[var(--color-profile-ring)] object-cover lg:block"
-          src="assets/img/portrait.jpg"
+          src={`${import.meta.env.BASE_URL}assets/img/portrait.jpg`}
           alt="Profile picture of Olivier Calmels"
         />
 

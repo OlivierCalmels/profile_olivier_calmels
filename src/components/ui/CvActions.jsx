@@ -5,7 +5,7 @@ export default function CvActions({
   context = "default",
   shortLabel,
   longLabel,
-  shortHref = "assets/documents/cv-short.pdf",
+  shortHref = `${import.meta.env.BASE_URL}assets/documents/cv-short.pdf`,
   menuAriaLabel = "CV download options",
   onLongClick,
   onShortClick,
