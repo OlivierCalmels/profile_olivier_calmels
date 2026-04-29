@@ -1,16 +1,106 @@
 @import "tailwindcss";
 
+:root {
+  --color-primary: rgb(173, 12, 66);
+  --color-secondary: #c04868;
+  --color-profile-ring: #ffffff40;
+  /* Bootstrap-aligned tokens (historical resume theme) */
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --color-body-text: var(--gray);
+}
+
 html {
+  -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: "Muli", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  box-sizing: border-box;
+  font-family:
+    "Muli",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-body-text);
+  text-align: left;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 h1,
 h2,
 h3 {
   font-family: "Saira Extra Condensed", system-ui, sans-serif;
+}
+
+main {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+main p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+main li {
+  line-height: inherit;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  aside {
+    display: none !important;
+  }
+
+  main {
+    margin: 0 !important;
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  section[data-nav-section] {
+    break-before: page;
+    page-break-before: always;
+    border: 0 !important;
+    padding: 10mm 0 !important;
+  }
+
+  section[data-nav-section]:first-of-type {
+    break-before: auto;
+    page-break-before: auto;
+    padding-top: 0 !important;
+  }
+
+  #about > div {
+    min-height: auto !important;
+    justify-content: flex-start !important;
+  }
+
+  .resume-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
 }
