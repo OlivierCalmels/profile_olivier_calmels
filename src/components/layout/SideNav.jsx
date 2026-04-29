@@ -1,4 +1,5 @@
 import { useState } from "react";
+import portraitUrl from "../../assets/portrait.jpg";
 import CvActions from "../ui/CvActions";
 
 export default function SideNav({
@@ -44,7 +45,7 @@ export default function SideNav({
 
         <img
           className="hidden h-40 w-40 rounded-full border-8 border-[var(--color-profile-ring)] object-cover lg:block"
-          src={`${import.meta.env.BASE_URL}assets/img/portrait.jpg`}
+          src={portraitUrl}
           alt="Profile picture of Olivier Calmels"
         />
 

@@ -1,3 +1,4 @@
+import portraitUrl from "../../assets/portrait.jpg";
 import Section from "../ui/Section";
 import CvActions from "../ui/CvActions";
 import { BodyText, PageTitle, Subheading } from "../ui/Typography";
@@ -8,7 +9,7 @@ export default function AboutSection({ t, cvVariant }) {
       <div className="flex min-h-screen flex-col justify-center">
       <img
         className="mb-6 block h-44 w-44 rounded-full border-8 border-[var(--color-primary)] object-cover lg:hidden"
-        src={`${import.meta.env.BASE_URL}assets/img/portrait.jpg`}
+        src={portraitUrl}
         alt="Profile picture of Olivier Calmels"
       />
       <PageTitle>
