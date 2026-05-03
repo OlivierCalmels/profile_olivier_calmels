@@ -23,9 +23,16 @@ export default function ExperienceSection({ t }) {
         <p className="mt-3">{t.experience.card1Line1}</p>
         <p>{t.experience.card1Line2}</p>
         <p>{t.experience.card1Line3}</p>
-        <p className="mt-3">{t.experience.card1ProjectP1}</p>
         <p className="mt-3">
-          {t.experience.card1ProjectP2Before}
+          <a
+            className="text-[var(--color-primary)] underline-offset-4 transition hover:underline"
+            href={t.experience.card1ProjectUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {t.experience.card1ProjectYearLinkLabel}
+          </a>
+          {t.experience.card1ProjectAfterYearLink}
           <a
             className="text-[var(--color-primary)] underline-offset-4 transition hover:underline"
             href={t.experience.card1ProjectContentfulUrl}
@@ -34,17 +41,7 @@ export default function ExperienceSection({ t }) {
           >
             {t.experience.card1ProjectContentfulLabel}
           </a>
-          {t.experience.card1ProjectP2After}
-        </p>
-        <p className="mt-2 font-semibold">
-          <a
-            className="text-[var(--color-primary)] underline-offset-4 transition hover:underline"
-            href={t.experience.card1ProjectUrl}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {t.experience.card1ProjectLink}
-          </a>
+          {t.experience.card1ProjectAfterContentful}
         </p>
       </ResumeCard>
 
