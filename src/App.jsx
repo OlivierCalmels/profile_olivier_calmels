@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import SideNav from "./components/layout/SideNav";
+import LanguagePromptModal from "./components/ui/LanguagePromptModal";
 import AboutSection from "./components/sections/AboutSection";
 import EducationSection from "./components/sections/EducationSection";
 import ExperienceSection from "./components/sections/ExperienceSection";
 import InterestsSection from "./components/sections/InterestsSection";
 import SkillsSection from "./components/sections/SkillsSection";
+import { readStoredLanguage, writeStoredLanguage } from "./lib/preferences";
 import fr from "./locales/fr.json";
 import en from "./locales/en.json";
 
@@ -14,8 +16,15 @@ const CV_ACTIONS_VARIANT = "A";
 
 function App() {
   const [activeSection, setActiveSection] = useState("about");
-  const [language, setLanguage] = useState("fr");
+  const [language, setLanguage] = useState(() => readStoredLanguage() ?? "fr");
+  const [languagePromptOpen, setLanguagePromptOpen] = useState(() => readStoredLanguage() === null);
   const t = messages[language];
+
+  const applyLanguage = (lang) => {
+    setLanguage(lang);
+    writeStoredLanguage(lang);
+    setLanguagePromptOpen(false);
+  };
 
   useEffect(() => {
     const sections = Array.from(document.querySelectorAll("section[data-nav-section]"));
@@ -45,13 +54,14 @@ function App() {
 
   return (
     <div id="page-top" className="min-h-screen bg-white text-[var(--color-body-text)]">
+      <LanguagePromptModal open={languagePromptOpen} onChoose={applyLanguage} />
       <SideNav
         navItems={navItems}
         navLabels={t.nav}
         activeSection={activeSection}
         onItemClick={setActiveSection}
         language={language}
-        onLanguageChange={setLanguage}
+        onLanguageChange={applyLanguage}
         cvVariant={CV_ACTIONS_VARIANT}
         cvLabels={{ short: t.about.downloadShort, long: t.about.downloadLong }}
         cvMenuAria={t.about.cvDownloadMenuAria}
