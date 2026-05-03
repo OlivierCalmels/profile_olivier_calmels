@@ -19,6 +19,7 @@ export default function ExperienceSection({ t }) {
           <li>{t.experience.stack1}</li>
           <li>{t.experience.stack2}</li>
           <li>{t.experience.stack3}</li>
+          <li>{t.experience.stack4}</li>
         </ul>
         <p className="mt-3">{t.experience.card1Line1}</p>
         <p>{t.experience.card1Line2}</p>

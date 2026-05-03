@@ -11,9 +11,8 @@ export default function SkillsSection({ t }) {
       <SectionTitle>{t.sectionTitles.skills}</SectionTitle>
       <p className="mb-2 uppercase tracking-[0.06em] text-slate-500">{s.technicalTitle}</p>
       <ul className="mb-8 ml-4 list-disc space-y-1">
-        <li>{s.technical1}</li>
         <li>
-          {s.technicalContractsIntro}{" "}
+          {s.technicalBackPrefix}
           <a className={linkCls} href="https://github.com/rswag/rswag" target="_blank" rel="noreferrer">
             rswag
           </a>
@@ -26,8 +25,15 @@ export default function SkillsSection({ t }) {
             OpenAPI
           </a>
         </li>
-        <li>{s.technical3}</li>
-        <li>{s.technical4}</li>
+        <li>{s.technicalFront}</li>
+        <li>{s.technicalDatabase}</li>
+        <li>{s.technicalPlatform}</li>
+        <li>
+          {s.technicalCmsBefore}
+          <a className={linkCls} href={s.technicalCmsUrl} target="_blank" rel="noreferrer">
+            {s.technicalCmsLabel}
+          </a>
+        </li>
         <li>{s.technicalVersioning}</li>
       </ul>
       <p className="mb-2 uppercase tracking-[0.06em] text-slate-500">{s.toolsTitle2}</p>
