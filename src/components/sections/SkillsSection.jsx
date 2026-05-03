@@ -28,12 +28,6 @@ export default function SkillsSection({ t }) {
         <li>{s.technicalFront}</li>
         <li>{s.technicalDatabase}</li>
         <li>{s.technicalPlatform}</li>
-        <li>
-          {s.technicalCmsBefore}
-          <a className={linkCls} href={s.technicalCmsUrl} target="_blank" rel="noreferrer">
-            {s.technicalCmsLabel}
-          </a>
-        </li>
         <li>{s.technicalVersioning}</li>
       </ul>
       <p className="mb-2 uppercase tracking-[0.06em] text-slate-500">{s.toolsTitle2}</p>
