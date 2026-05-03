@@ -23,6 +23,29 @@ export default function ExperienceSection({ t }) {
         <p className="mt-3">{t.experience.card1Line1}</p>
         <p>{t.experience.card1Line2}</p>
         <p>{t.experience.card1Line3}</p>
+        <p className="mt-3">{t.experience.card1ProjectP1}</p>
+        <p className="mt-3">
+          {t.experience.card1ProjectP2Before}
+          <a
+            className="text-[var(--color-primary)] underline-offset-4 transition hover:underline"
+            href={t.experience.card1ProjectContentfulUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {t.experience.card1ProjectContentfulLabel}
+          </a>
+          {t.experience.card1ProjectP2After}
+        </p>
+        <p className="mt-2 font-semibold">
+          <a
+            className="text-[var(--color-primary)] underline-offset-4 transition hover:underline"
+            href={t.experience.card1ProjectUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {t.experience.card1ProjectLink}
+          </a>
+        </p>
       </ResumeCard>
 
       <ResumeCard date={t.experience.card2Date}>
@@ -61,26 +84,6 @@ export default function ExperienceSection({ t }) {
             Centre Efficacité Energétique
           </a>{" "}
           {t.experience.card3Line4Suffix}
-        </p>
-      </ResumeCard>
-
-      <ResumeCard date={t.experience.card4Date} compact>
-        <CardTitle>{t.experience.card4Title}</CardTitle>
-        <AccentText>
-          <a href={t.experience.card1OrgUrl} target="_blank" rel="noreferrer">
-            {t.experience.card1Org}
-          </a>
-        </AccentText>
-        <p className="mt-3">{t.experience.card4Line1}</p>
-        <p className="mt-2 font-semibold">
-          <a
-            className="text-[var(--color-primary)] underline-offset-4 transition hover:underline"
-            href={t.experience.card4Url}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {t.experience.card4Link}
-          </a>
         </p>
       </ResumeCard>
     </Section>

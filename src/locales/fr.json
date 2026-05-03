@@ -37,6 +37,13 @@
     "card1Line1": "Travail au sein d'une équipe de 4 développeurs.",
     "card1Line2": "Création de nouvelles fonctionnalités (back et front), maintenance et amélioration continue de l'existant.",
     "card1Line3": "Produit SaaS B2B : il n'existe pas d'accès démo public.",
+    "card1ProjectP1": "Year in Review (fin 2023) : un side project, distinct de la plateforme produit Memory. Avec le Head of design, le défi a été de monter une équipe réduite et, en peu de temps, de livrer une page très animée.",
+    "card1ProjectP2Before": "Le contenu éditorial était géré dans ",
+    "card1ProjectContentfulLabel": "Contentful",
+    "card1ProjectContentfulUrl": "https://www.contentful.com/",
+    "card1ProjectP2After": " — un bon mix d'amusement et de dynamisme.",
+    "card1ProjectLink": "Voir le projet",
+    "card1ProjectUrl": "https://year-in-review.inthememory.com/",
     "card2Title": "Ingénieur Expertise",
     "card2Org": "Cemafroid",
     "card2Date": "2017 - 2020",
@@ -56,12 +63,7 @@
     "card3Line3Prefix": "Ingénieur R&D au",
     "card3Line3Suffix": "(École des Mines de Paris) / 2013-2015",
     "card3Line4Prefix": "Technicien R&D au",
-    "card3Line4Suffix": "(École des Mines de Paris) / 2008-2013",
-    "card4Title": "Year in Review 2024",
-    "card4Link": "Voir le projet",
-    "card4Url": "https://year-in-review.inthememory.com/",
-    "card4Date": "2024",
-    "card4Line1": "J'ai co-conçu une page web pour marquer la fin de 2023, en collaboration avec le designer."
+    "card3Line4Suffix": "(École des Mines de Paris) / 2008-2013"
   },
   "education": {
     "card1Title": "Simplon · Paris",
@@ -95,11 +97,6 @@
     "method4": "Continuous delivery"
   },
   "projects": {
-    "card0Title": "Year in Review 2024",
-    "card0Link": "Voir le projet",
-    "card0Url": "https://year-in-review.inthememory.com/",
-    "card0Date": "2024",
-    "card0Line1": "J'ai co-conçu une page web pour marquer la fin de 2023, en collaboration avec le designer.",
     "card1Title": "Hacking Educational Planning - IIPE-UNESCO x Latitudes",
     "card1Link": "Plus d'informations ici",
     "card1Date": "Fév 2021",

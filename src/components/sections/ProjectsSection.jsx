@@ -7,26 +7,6 @@ export default function ProjectsSection({ t }) {
     <Section id="projects">
       <SectionTitle>{t.sectionTitles.projects}</SectionTitle>
 
-      <ResumeCard date={t.projects.card0Date}>
-        <CardTitle>{t.projects.card0Title}</CardTitle>
-        <AccentText className="mt-2 text-lg">
-          <a href={t.experience.card1OrgUrl} target="_blank" rel="noreferrer">
-            {t.experience.card1Org}
-          </a>
-        </AccentText>
-        <p className="mt-3">{t.projects.card0Line1}</p>
-        <p className="mt-2 font-semibold">
-          <a
-            className="text-[var(--color-primary)] underline-offset-4 transition hover:underline"
-            href={t.projects.card0Url}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {t.projects.card0Link}
-          </a>
-        </p>
-      </ResumeCard>
-
       <ResumeCard date={t.projects.card1Date}>
         <CardTitle>{t.projects.card1Title}</CardTitle>
         <AccentText className="mt-2 text-lg">

@@ -37,6 +37,13 @@
     "card1Line1": "Working in a 4 members dev team.",
     "card1Line2": "Create new features (back & front) and maintain and improve existing features.",
     "card1Line3": "SaaS B2B product: no public demo access available.",
+    "card1ProjectP1": "The Year in Review (end of 2023) was a side project, separate from the core Memory platform. With our Head of design, the challenge was to stand up a small team and, on a short timeline, ship a page heavy on motion and animation.",
+    "card1ProjectP2Before": "Editorial content was managed in ",
+    "card1ProjectContentfulLabel": "Contentful",
+    "card1ProjectContentfulUrl": "https://www.contentful.com/",
+    "card1ProjectP2After": " — a strong mix of playfulness and energy.",
+    "card1ProjectLink": "View project",
+    "card1ProjectUrl": "https://year-in-review.inthememory.com/",
     "card2Title": "Expertise Engineer",
     "card2Org": "Cemafroid",
     "card2Date": "2017 - 2020",
@@ -56,12 +63,7 @@
     "card3Line3Prefix": "R&D engineer at",
     "card3Line3Suffix": "(Ecole des Mines de Paris) / 2013-2015",
     "card3Line4Prefix": "R&D technician at",
-    "card3Line4Suffix": "(Ecole des Mines de Paris) / 2008-2013",
-    "card4Title": "Year in Review 2024",
-    "card4Link": "View project",
-    "card4Url": "https://year-in-review.inthememory.com/",
-    "card4Date": "2024",
-    "card4Line1": "I co-built a web page to mark the end of 2023, collaborating with our designer."
+    "card3Line4Suffix": "(Ecole des Mines de Paris) / 2008-2013"
   },
   "education": {
     "card1Title": "Simplon · Paris",
@@ -95,11 +97,6 @@
     "method4": "Continuous delivery"
   },
   "projects": {
-    "card0Title": "Year in Review 2024",
-    "card0Link": "View project",
-    "card0Url": "https://year-in-review.inthememory.com/",
-    "card0Date": "2024",
-    "card0Line1": "I co-built a web page to mark the end of 2023, collaborating with our designer.",
     "card1Title": "Hacking Educational Planning - IIPE-UNESCO x Latitudes",
     "card1Link": "More informations here",
     "card1Date": "Feb 2021",
